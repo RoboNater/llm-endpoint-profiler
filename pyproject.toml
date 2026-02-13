@@ -1,0 +1,14 @@
+[project]
+name = "llm-endpoint-profiler"
+version = "0.1.0"
+description = "LLM Endpoint Capability Profiler"
+readme = "README.md"
+requires-python = ">=3.13"
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.uv.workspace]
+members = [
+    "llm-endpoint-profiler",
+]
+dependencies = []

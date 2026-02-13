@@ -1,0 +1,3 @@
+"""
+Abstract probe interface definition.
+"""
