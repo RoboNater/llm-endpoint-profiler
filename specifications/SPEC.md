@@ -96,7 +96,7 @@ FR8 — The CLI SHALL handle and document errors gracefully.
 
 ### 4.2 Non-Functional Requirements
 
-NFR1 — Implementation SHALL use Python 3.11+.
+NFR1 — Implementation SHALL use Python 3.13+ and be compatible with uv-managed environments.
 
 NFR2 — All code SHALL use type hints.
 
@@ -108,7 +108,11 @@ NFR5 — The probe architecture SHALL be modular and extensible.
 
 NFR6 — The project SHALL include automated tests using pytest.
 
-NFR7 — The design SHALL separate:
+NFR7 — The project SHALL enforce code quality standards using ruff for linting and mypy for static type checking.
+
+NFR8 — Type checking SHALL be configured in strict mode unless explicitly justified.
+
+NFR9 — The design SHALL separate:
 - Capability discovery logic
 - Data modeling
 - Report rendering
